@@ -1,9 +1,5 @@
-This is the description we show on the course page [here](https://lab.github.com/Course-Reactor/networking). This first paragraph will be featured at the top of the page so make it great.
-​
+A brief and gentle introduction to networking.
 
-​
-Be sure to tell the learner about the technology you are teaching, why they should learn it, how they can use it, and what you will teach them.
-​
+During this course, you will learn the basics about computer networks, the Internet Protocol, TCP vs. UDP, DNS, and how the World Wide Web works.
 
-
-Include information on how they can reach you for questions about the content or course. 
+This course is provided by [Course Reactor](https://www.coursereactor.org)
