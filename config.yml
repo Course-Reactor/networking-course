@@ -38,3 +38,13 @@ steps:
     description: 'The World Wide Web: Crash Course Computer Science'
     link: '{{ store.the_world_wide_web_link }}'
     video: 'https://www.youtube.com/embed/guvsH5OFizE'
+    actions:
+      - type: createIssue
+        title: 'Assignment: Computer Science History Research Paper'
+        body: computer-science-history.md
+        store:
+          computer_science_history_link: '{{ result.data.html_url }}'
+  - title: 'Assignment: Computer Science History Research Paper'
+    description: Your first Web Development Degree assignment.
+    link: '{{ store.computer_science_history_link }}'
+    event: issues.closed
