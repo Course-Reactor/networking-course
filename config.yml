@@ -3,14 +3,38 @@ description: A brief and gentle introduction to computer networking.
 template:
   repo: networking-template
   name: networking
+  description: A brief and gentle introduction to computer networking.
 before:
   - type: createIssue
-    title: Welcome!
-    body: new-issue.md
+    title: 'Video: Computer Networking'
+    body: computer-networking.md
+    store:
+      computer_networking_link: '{{ result.data.html_url }}'
 steps:
-  - title: First step
-    description: The first step in your course
-    event: issues.assigned
-    link: '{{ repoUrl }}'
+  - title: 'Video: Computer Networking'
+    description: 'Computer Networking: Crash Course Computer Science'
+    event: issues.closed
+    link: '{{ store.computer_networking_link }}'
+    video: 'https://www.youtube.com/embed/3QhU9jd03a0'
     actions:
-      - type: closeIssue
+      - type: createIssue
+        title: 'Video: The Internet'
+        body: the-internet.md
+        store:
+          the_internet_link: '{{ result.data.html_url }}'
+  - title: 'Video: The Internet'
+    actions:
+      - type: createIssue
+        title: 'Video: The World Wide Web'
+        body: the-world-wide-web.md
+        store:
+          the_world_wide_web_link: '{{ result.data.html_url }}'
+    description: 'The Internet: Crash Course Computer Science'
+    link: '{{ store.the_internet_link }}'
+    video: 'https://www.youtube.com/embed/AEaKrq3SpW8'
+    event: issues.closed
+  - title: 'Video: The World Wide Web'
+    event: issues.closed
+    description: 'The World Wide Web: Crash Course Computer Science'
+    link: '{{ store.the_world_wide_web_link }}'
+    video: 'https://www.youtube.com/embed/guvsH5OFizE'
