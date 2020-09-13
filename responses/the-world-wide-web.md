@@ -1,4 +1,4 @@
-# :tv: Video: The Internet
+# :tv: Video: The World Wide Web
 
 Watch the following video: [link](https://youtu.be/guvsH5OFizE)
 
